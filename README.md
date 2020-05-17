@@ -9,7 +9,6 @@ Docente: Ing. Vigo Pereyra Liliana.
 
 ![1er Trabajo](imagenes/tareaihm.png)
 
-![1er trabajo](imagen1.png)
 
 
 > Es hora de que pagues por mi esfuerzo jaja, visita mi blog (Ko-fi) y podrás encontrar documentos de los proyectos que he hecho hasta ahora, como por ejem: Inso l, Inso ll, Base de Datos, Arqui de Comp, Redes, etc.
