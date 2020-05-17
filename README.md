@@ -4,7 +4,14 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 
 Docente: Ing. Vigo Pereyra Liliana
 
-###1er Trabajo
+### 1er Trabajo
 
-![1er trabajo](imagenes/tareaihm.PNG)
+![1ertrabajo](imagenes/tareaihm.png)
+
+![1er trabajo](/imagenes/tareaihm.png)
+
+
+
+
+
 
