@@ -1,0 +1,19 @@
+h3{
+    padding-top: 20px;
+}
+
+.img-responsive{
+    padding-top: 15px;
+    width: 300px;
+    height: 200px;
+}
+
+p{
+    padding-top: 10px;
+}
+
+.widgets > div {
+    margin-bottom: 20px;
+    padding: 20px;
+    }
+    
