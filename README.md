@@ -15,4 +15,8 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C01KIR7)
 
 
+### 2da Trabajo - Lab
+
+![1er trabajo](imagen2.jpg)
+
 

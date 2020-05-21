@@ -1,0 +1,37 @@
+h3{
+    padding-top: 30px;
+}
+
+.img-responsive{
+    padding-top: 15px;
+    width: 350px;
+    height: 250px;
+    
+}
+
+pre{
+    padding-top: 10px;
+   
+}
+
+
+form{
+
+	float:center;
+	padding:20px;	
+}
+
+textarea{
+    width: 400px;
+	height: 110px;
+}
+
+footer{
+    padding-bottom: 15px;
+	background:rgb(0, 7, 10);
+	color:#fff;
+    clear:both;
+	padding:3px 0px;
+	text-align:center;
+}
+
