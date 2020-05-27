@@ -13,6 +13,10 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 
 ![2er trabajo](imagen2.jpeg)
 
+### 3er Trabajo - Lab
+
+![3er trabajo](imagen3.jpeg)
+
 
 > Es hora de que pagues por mi esfuerzo jaja, visita mi blog (Ko-fi) y podrás encontrar documentos de los proyectos que he hecho hasta ahora, como por ejem: Inso l, Inso ll, Base de Datos, Arqui de Comp, Redes, etc.
 
