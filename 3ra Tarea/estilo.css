@@ -1,0 +1,37 @@
+body{
+    background: #ffffff;
+    color:#000;
+}
+
+header{
+    background: #0B6;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+footer{
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.contenedor-imagen{
+    margin-bottom: 40px;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.widgets > div {
+   
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.contenedor-imagen a {
+    background: #3da5e2;
+    display: inline-block;
+}
+
+.contenedor-imagen:hover img{
+    opacity: .3;
+}
