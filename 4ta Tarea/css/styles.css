@@ -1,0 +1,58 @@
+.contenedor-main {
+	margin-bottom: 2px;
+	background: #4f7aa9;
+}
+.contenedor-imagen {
+	max-height: 350px;
+	overflow: hidden;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.zona-registro{
+	background: #19305a;
+	color: white;
+	height: 110px;
+	margin-bottom: 1px;
+}
+
+a{
+	color:#182e5a;
+}
+
+.navbar {
+  
+  background: #60758f;
+  opacity: 0.9;
+}
+
+.navbar .nav-item .nav-link {
+  color: #232552;
+}
+
+.sucursales{
+	height: 130px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.columna1{
+	background: #fff;	
+	outline: 1px solid #232552 ;	
+}
+
+.columna2{
+	background: #CDC8C8;
+	color: #232552;
+	outline: 1px solid #232552 ;
+}
+
+.miacordeon .card-header{
+	background: #19305a;;
+}
+
+.miacordeon .btn{
+	color: white;
+}
