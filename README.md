@@ -22,6 +22,8 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 
 > Es hora de que pagues por mi esfuerzo jaja, visita mi blog (Ko-fi) y podrás encontrar documentos de los proyectos que he hecho hasta ahora, como por ejem: Inso l, Inso ll, Base de Datos, Arqui de Comp, Redes, etc.
 
+:heart_eyes: :heart_eyes: :heart_eyes: :heart_eyes: :heart:
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C01KIR7)
 
 
