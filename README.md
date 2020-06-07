@@ -1,6 +1,6 @@
 # TRABAJOS DE IHM
 
-En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquina.
+En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquina. :octocat:
 
 ### 1er Trabajo - Lab
 
