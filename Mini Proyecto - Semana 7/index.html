@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Centro de Nutrición</title>
+    <link rel="icon" href="img/logo/logo2/loguito.jpg">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin/bootstrap-datepicker.standalone.min.css">
+    <link rel="stylesheet" href="css/plugin/jquery.jdSlider.css">  <!--Aqui viene el pano-->
+    <link rel="stylesheet" href="css/plugin/fullcalendar.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="habitaciones.css">
+
+    <!-- Bootstrap CSS Aquí llama a las hojas de estilo de bootstrap, pero lo hace de un servidor externo-->
+
+</head>
+
+<body>
+
+    <!--Header-->
+    
+    <header class="container-fluid p-0 bg-white">
+        <div class="container p-0">
+            <div class="grid-container py-2">
+
+                <!--Logo-->
+                <div class="grid-item">
+
+                    <a href="index.html">
+                        <img src="img/logo/logo2/Estarbienx.jpg" alt="logotipo" class="img-fluid">
+                    </a>
+
+                </div>
+
+                <div class="grid-item d-none d-lg-block"></div>
+
+                <!--Campana y reserva-->
+                <div class="grid-item d-none d-lg-block bloqueReservas">
+
+                    <div class="py-2 campana-y-reserva mostrarBloqueReservas" modo="abajo">
+                        <i class="fas fa-calculator lead mx-2"></i>
+                        <i class="fas fa-caret-up lead mx-2 flechaReserva"></i>
+                    </div> 
+
+                    <!--Formulario de Reservas-->
+                    
+                    <div class="formReservas py-1 py-lg-2 px-4">
+                        
+                        <h5 class="pt-2"> CALCULA TU ÍNDICE CORPORAL AQUÍ </h5>
+                        
+
+                        <div class="form-group my-4">
+                            <input class="form-control form-control-lg" placeholder="Ingresa tu peso">
+                        </div>
+
+                        <div class="form-group my-4">
+                            <input class="form-control form-control-lg" placeholder="Ingresa tu talla">
+                        </div>
+                        
+                        <input type="button" class="btn btn-block btn-lg my-4 text-white" value="CALCULAR">
+
+                        <div class="form-group my-4">
+                            <label style="color: white;" > RESULTADO: </label>
+                            <input class="form-control form-control-lg">
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Ingreso de Usuarios-->
+
+                <div class="grid-item d-none d-lg-block mt-2">
+
+                    <a href="#modalIngreso" data-toggle="modal"> <i class="fas fa-user"></i></a>
+
+                </div>
+
+                <!-- Selección de idioma -->
+                <div class="grid-item d-none d-lg-block mt-1 idiomas">
+
+                    <span class="border border-info float-left p-1 bg-info text-white idiomasEs">ES</span>
+                    <span class="border border-info float-left p-1 bg-white text-dark idiomasEn">EN</span>
+
+                </div>
+
+                <!-- Menú Hamburguesa -->
+                <div class="grid-item mt-1 mt-sm-3 mt-md-4 mt-lg-2 botonMenu">
+                    <i class="fas fa-bars lead"> </i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Menú-->
+    <nav class="menu container-fluid p-0">
+
+        <ul class="nav nav-justified py-2">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#planes"> Servicios </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#testimonios"> Testimonios </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#comentarios"> Comentarios </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#contactenos"> Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#acerca"> Acerca de Nosotros </a>
+            </li>
+            <li class="nav-item">
+                <ul class="my-2 py-1">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+   
+
+    <!--Banner-->
+
+    <div class="banner container-fluid p-0">
+
+        <div class="jd-slider fade-slider">
+
+            <div class="slide-inner">
+
+                <ul class="slide-area">
+
+                    <li>
+                        <img src="img/Banner/fachada.jpg" width="100%">
+                    </li>
+
+                    <!-- Corregir 
+                    <li>
+                        <img src="img/Banner/im2.jpeg" width="100%">
+                    </li>
+
+                    <li>
+                        <img src="img/Banner/im3.jpeg" width="100%">
+                    </li>
+
+                    <li>
+                        <img src="img/Banner/img1.jpg" width="100%">
+                    </li>
+
+                    -->
+
+                </ul>
+
+            </div>
+
+            <div class="controller d-none">
+
+                <a class="auto" href="#">
+
+                    <i class="fas fa-play fa-xs"></i>
+                    <i class="fas fa-pause fa-xs"></i>
+
+                </a>
+
+                <div class="indicate-area"></div>
+
+            </div>
+
+            <div class="verMas text-center bg-white rounded-circle d-none d-lg-block" vinculo="#planes">
+
+                <i class="fas fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Planes-->
+    <div class="planes container-fluid bg-white p-0" id="planes">
+        <div class="container p-0">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1 class="text-center py-3 py-lg-5 tituloPlan" tituloPlan="BIENVENIDO"> BIENVENIDO</h1>
+                    <P class="text-muted text-left  px-4 descripcionPlan" descripcionPlan=" Consulte nuestros servicios para llevar una dieta saludable. Recuerde que es para la persona de cualquier edad, pero sobre todo para los niños y adolecentes ya que ellos necesitan de una buena nutrición para contribuir a su crecimiento y desarrollo.">
+                        Consulte nuestros servicios para llevar una dieta saludable. Recuerde que es para la persona de cualquier edad, pero sobre todo para los niños y adolecentes ya que ellos necesitan de una buena nutrición para contribuir a su crecimiento y desarrollo.</P>
+
+                </div>
+
+                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                    <figure class="text-center">
+                        <h1 descripcion="Los tratamientos exitosos para bajar de peso consisten en fijarse metas y hacer cambios en el estilo de vida, como consumir menos calorías y hacer ejercicio con regularidad.
+
+                        Los tratamientos con medicinas y la cirugía para bajar de peso también son alternativas para algunas personas si los cambios en el estilo de vida no son suficientes."> REDUCCIÓN DE PESO </h1>
+                    </figure>
+                    <img src="img/bajarPeso.jpg" alt="img-fluid" width="100%">
+                </div>
+
+                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                    <figure class="text-center">
+                        <h1 descripcion="En realidad, la masa muscular es el secreto para gozar de una salud óptima y para mantenerse en buena forma física. Además de leer los consejos 
+                        para ganar masa muscular que te planteamos, queremos que aprendas todas las razones por las que debes ganar masa muscular."> AUMENTO DE PESO Y/O MASA MUSCULAR</h1>
+                    </figure>
+                    <img src="img/aumento.jpg" alt="img-fluid" width="100%">
+                </div>
+
+                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                    <figure class="text-center">
+                        <h1 descripcion="Una alimentación saludable y equilibrada es fundamental para el estado de salud de los niños,
+                         y determinante para un correcto funcionamiento del organismo, buen crecimiento, una optima capacidad de aprendizaje.">NUTRICIÓN INFANTIL</h1>
+                    </figure>
+                    <img src="img/nu.jpg" alt="img-fluid" width="100%">
+                </div>
+
+                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                    <figure class="text-center">
+                        <h1 descripcion="La importancia de un tratamiento médico oportuno no puede subestimarse.
+                        El incumplimiento es la principal causa de no lograr los beneficios completos que los medicamentos
+                         pueden proporcionar a los pacientes."> ENFERMEDADES MÉDICAS</h1>
+                    </figure>
+                    <img src="img/enferMedicas.jpg" alt="img-fluid" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--Planes movil---->
+
+    <div class="d-block d-lg-none planesMovil jd-slider bg-white" id="planesMovil">
+
+        <h1 class="text-center py-3"> PLANES </h1>
+
+        <div class="slide-inner">
+
+            <ul class="slide-area">
+
+                <li>
+                    <a href="#modalPlanes" data-toggle="modal" descripcion="Steins;Gate es una novela visual japonesa desarrollada por 5pb. y Nitroplus y
+                    lanzada el 15 de octubre de 2009 para Xbox 360. Es la segunda colaboración entre las dos compañías, 
+                    después de Chaos;Head.">
+                        <img src="img/romantico.jpg">
+                        <h6 class="py-2 text-center">ROMÁNTICO</h6>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#modalPlanes" data-toggle="modal" descripcion="Gleipnir es una serie de manga escrita e ilustrada por Sun Takeda. 
+                    Ha sido serializada en la revista Young Magazine the 3rd de Kōdansha desde octubre de 2015
+                     y recopilada en ocho volúmenes tankōbon. Una adaptación a serie de anime producida por Pine Jam se estrenó 
+                     el 5 de abril de 2020.">
+                        <img src="img/luna_miel.jpg">
+                        <h6 class="py-2 text-center">LUNA DE MIEL</h6>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#modalPlanes" data-toggle="modal" descripcion="One Piece con 299 millones de fans de todo el mundo en su categoría de cómic 
+                    japonés Shonen es un manga escrito e ilustrado por Eiichirō Oda. Comenzó a publicarse en la revista
+                     japonesa Weekly Shōnen Jump el 22 de julio de 1997.
+                      Shueisha publica los capítulos en volúmenes">
+                        <img src="img/aventura.jpg">
+                        <h6 class="py-2 text-center">AVENTURA</h6>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#modalPlanes" data-toggle="modal" descripcion="Plunderer es una serie de manga escrita e ilustrada por Suu Minazuki. 
+                    Comenzó su serialización en la revista mensual Shōnen Ace de la editorial Kadokawa Shōten el 
+                 26 de diciembre de 2014, siendo compilada en 14 volúmenes tankōbon hasta la fecha. Panini Comics 
+                 ha licenciado el manga para México desde 2018">
+                        <img src="img/spa.jpg">
+                        <h6 class="py-2 text-center">SPA</h6>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <a class="prev" href="#">
+                <i class="fas fa-angle-left text-muted"></i>
+            </a>
+
+            <a class="next" href="#">
+                <i class="fas fa-angle-right text-muted"></i>
+            </a>
+
+        </div>
+
+        <div class="controller">
+            <div class="indicate-area"> </div>
+        </div>
+
+    </div>
+
+    <!--Recorrido por el pueblo-->
+
+    <div class="recorridoPueblo container-fluid bg-white pb-5" id="comentarios">
+        <div class="container">
+            <h1 class="pt-5 text-center"> LO QUE DICEN LOS EXPERTOS </h1>
+            <div class="jd-slider slidePueblo">
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                            <div class="grid-container pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                <div class="grid-item"> 
+                                    <img src="img/per1.jpg" class="img-fluid" width="100%">
+                                 </div>
+                             <div class="grid-item">
+                                <h1 class="mt-4 mb-0 my-lg-2"> Dra. Any Vallejos</h1>
+                                <p class="small p-3">"Aquellos que piensan que no tienen tiempo para una alimentación saludable tarde o temprano encontrarán tiempo para la enfermedad".</p>
+                             </div>
+                                <div class="grid-item d-none d-lg-block">
+                                    <img src="img/consultorio.jpg" class="img-fluid" width="100%">
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="grid-container pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                <div class="grid-item"> 
+                                    <img src="img/per2.jpg" class="img-fluid" width="100%">
+                                 </div>
+                             <div class="grid-item">
+                                <h1 class="mt-4 mb-0 my-lg-2">Dra. Mariela Caballero</h1>
+                                <p class="small p-3">"Si llevas una dieta balanceada, consigues todas las vitaminas y minerales que necesitas y no necesitas suplementos, de hecho la sobredosis puede ser peor".</p>
+                             </div>
+                                <div class="grid-item d-none d-lg-block">
+                                    <img src="img/salanutricionista.jpg" class="img-fluid" width="100%">
+                                </div>
+                            </div>
+                        </li> 
+
+                        <li>
+                            <div class="grid-container pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                <div class="grid-item"> 
+                                    <img src="img/per3.jpg" class="img-fluid" width="100%">
+                                 </div>
+                             <div class="grid-item">
+                                <h1 class="mt-4 mb-0 my-lg-2">Dra. Martha Sánchez</h1>
+                                <p class="small p-3">"Comer inteligentemente no solo te hará más inteligente, es la cosa inteligente a hacer. Estarás en un riesgo mucho más bajo de necesitar confiar en doctores y medicinas para mantener tu salud".</p>
+                             </div>
+                                <div class="grid-item d-none d-lg-block">
+                                    <img src="img/salanutricionista2.jpg" class="img-fluid" width="100%">
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+                <a class="d-none d-md-block prev" href="#">
+                    <i class="fas fa-angle-left fa-2x" style="color: #3E92BD"></i>
+                </a>
+
+                <a class="d-none d-md-block next" href="#">
+                    <i class="fas fa-angle-right fa-2x" style="color: #3E92BD" ></i>
+                </a>
+
+                <div class="controller">
+                    <div class="indicate-area"> </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   <!--TESTIMONIOS-->
+
+   <div class="testimonios container-fluid py-5 text-white" id="testimonios">
+        
+    <div class="container mb-3">
+
+        <h1 class="text-center py-5">TESTIMONIOS</h1>
+
+        <div class="row">
+
+            <div class="col-12 col-lg-3 text-center p-4">
+
+                <img src="img/testimonios/Arnold-Schwarzenegger.png" class="img-fluid rounded-circle">
+
+                <h4 class="py-4">Arnold S.</h4>
+
+                <p>Me han dado una completa orientación de la situación de mi hijo y el porqué de su actitud hacia los alimentos. Con todas las indicaciones hoy puedo decir que mi pequeño es un niño sano.</p>
+
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+
+                <img src="img/testimonios/Jason_statham.jpg" class="img-fluid rounded-circle">
+
+                <h4 class="py-4"> Stalin Statham.</h4>
+
+                <p>Recomiendo a que vengan al Consultorio Nutricional Nutriyachay pues he conseguido subir de peso. Antes había intentado de todo, suplementos y otros, pero solo aquí logre subir de peso de forma natural.</p>
+
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+
+                <img src="img/testimonios/rambo.jpeg" class="img-fluid rounded-circle">
+
+                <h4 class="py-4">Sylvester Stallone</h4>
+
+                <p>Recomiendo "Estar bien"porque la dieta es muy buena. La alimentación de mi hijita ha cambiado bastante, ahora también he aprendido hacer las ensaladas.</p>
+
+            </div>
+
+            <div class="col-12 col-lg-3 text-center p-4">
+
+                <img src="img/testimonios/van_dame.jpg" class="img-fluid rounded-circle">
+
+                <h4 class="py-4"> Van Damme</h4>
+
+                <p>Me inscribí al programa y está haciendo efecto, me siento muy bien. Pensé que no lograría porque soy delgado, tal vez por herencia, pero en el Consultorio me ha ido muy bien. Si los recomendaría.</p>
+
+            </div>
+
+        </div>
+
+        <button class="btn btn-default float-right px-4"> VER MÁS </button>
+
+    </div>
+
+</div>
+
+
+
+    <!--Contáctenos-->
+
+    <div class="contactenos container-fluid bg-white py-4" id="contactenos">
+        <div class="container text-center">
+            <h1 class="py-sm-4">CONTÁCTANOS</h1>
+            <form>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Nombre" required>
+                    <input type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Apellido" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="number" class="form-control mb-3 mr-2 form-control-lg" placeholder="Móvil" required>
+                    <input type="email" class="form-control mb-3 ml-2 form-control-lg" placeholder="Correo Electrónico" required>
+            </div>
+                <textarea class="form-control" rows="6" placeholder="Escribir aquí tu mensaje"></textarea>
+                <button class="btn btn-dark my-4 btn-lg py-3" value="Enviar"> Enviar </button>
+   
+            </form>
+        </div>
+    </div>
+
+    <!--Mapa-->
+
+    <div class="mapa container-fluid bg-white p-0" id="acerca">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.630795347488!2d-79.03435008566963!3d-8.13901618374888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d42eada608f%3A0xeba726a44a1634a!2sHotel%20Country%20Trujillo!5e0!3m2!1ses-419!2spe!4v1592068562118!5m2!1ses-419!2spe"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+
+        <div class=" p-4 info">
+
+            <h3 class="mt-4"> <strong>Visitanos</strong></h3>
+
+            <p>Nuestro objetivo es desarrollar de forma personalizada un tratamiento de alimentación saludable.
+                En nuestra experiencia en el mercado de 7 años y más de 4.000 casos de éxito, tenemos diseñado un método de trabajo donde tendrás más que una consulta nutricional
+            </p>
+
+            <p class="pb-4">Email: MiniProyectoIHM@hotmail.com<br>
+            Pasaje Tumi #141<br>
+            Tel: 252648</p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid p-0">
+        <div class="grid-container">
+            <div class="grid-item d-none d-lg-block pt-2"> </div>
+            <div class="grid-item d-none d-lg-block pt-2"> 
+                <p> © Hecho por Neisser Sánchez | Visita mi <a href="https://github.com/NeisserMS">GitHub</a> </p>
+            </div>
+            <div class="grid-item pt-2"> 
+
+                <ul class="py-1">
+
+                    <li>
+                        <a href="https://www.facebook.com/neisserarilson.morenosanchez.9/" target="_blank"> <i class="fab fa-facebook-f lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank"> <i class="fab fa-twitter lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC0czkwt1PdL6SkjIvuuiusQ?view_as=subscriber" target="_blank"> <i class="fab fa-youtube lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/neissercode.21/?hl=es-la" target="_blank"> <i class="fab fa-instagram lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!--Redes Móviles-->
+
+    <ul class="redesMovil p-2 nav nav-justified">
+
+        <li class="nav-item">
+            <a href="#" target="_blank"> <i class="fab fa-facebook-f lead text-white float-left mx-3"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" target="_blank"> <i class="fab fa-twitter lead text-white float-left mx-3"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" target="_blank"> <i class="fab fa-youtube lead text-white float-left mx-3"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" target="_blank"> <i class="fab fa-instagram lead text-white float-left mx-3"></i></a>
+        </li>
+
+    </ul>
+
+
+    <!-- Ventanas Modal Ingreso -->
+
+    <div class="modal" id="modalIngreso">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header bg-info text-white">
+                    <h4 class="modal-title">Ingresar</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Ingreso con Redes Sociales-->
+
+                    <div class="d-flex">
+                        <div class="px-2 flex-fill">
+                            <p class="p-2 bg-primary text-center text-white ">
+                                <i class="fab fa-facebook"></i>
+                                Ingreso con Facebook
+                            </p>
+                        </div>
+
+                        <div class="px-2 flex-fill">
+                            <p class="p-2 bg-danger text-center text-white">
+                                <i class="fab fa-google"></i>
+                                Ingreso con Google
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Ingreso Directo-->
+
+                    <hr class="mt-0">
+                    <form>
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="email" class="form-control" placeholder="Email" required>
+
+                        </div>
+
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="fas fa-unlock-alt"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="password" class="form-control" placeholder="Contraseña" required>
+
+                        </div>
+
+                        <input type="submit" class="btn btn-dark btn-block" value="Ingresar">
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    ¿No tienes una cuenta registrada? |
+                    <strong>
+
+                        <a href="#modalRegistro" data-toggle="modal" data-dismiss="modal">
+                            Registrarse
+                        </a>
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Ventanas Modal Planes -->
+
+    <div class="modal" id="modalPlanes">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="#" class="img-thumbnail">
+                    <p class="py-3"></p>
+                    <div class="text-center">
+                        <a href="habitaciones.html" class="btn btn-primary text-center"> Ver Detalles</a>
+                    </div>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Ventanas Modal Registro -->
+
+    <div class="modal" id="modalRegistro">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header bg-info text-white">
+                    <h4 class="modal-title">Registrarse</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Ingreso con Redes Sociales-->
+
+                    <div class="d-flex">
+                        <div class="px-2 flex-fill">
+                            <p class="p-2 bg-primary text-center text-white ">
+                                <i class="fab fa-facebook"></i>
+                                Ingreso con Facebook
+                            </p>
+                        </div>
+
+                        <div class="px-2 flex-fill">
+                            <p class="p-2 bg-danger text-center text-white">
+                                <i class="fab fa-google"></i>
+                                Ingreso con Google
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Registro Directo-->
+
+                    <hr class="mt-0">
+
+                    <form>
+
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="far fa-user"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Nombre">
+
+                        </div>
+
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="number" class="form-control" placeholder="Telefono" required>
+
+                        </div>
+
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="email" class="form-control" placeholder="Email" required>
+
+                        </div>
+
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text">
+                                    <i class="fas fa-unlock-alt"></i>
+                                </span>
+
+                            </div>
+
+                            <input type="password" class="form-control" placeholder="Contraseña" required>
+
+                        </div>
+
+                        <input type="submit" class="btn btn-dark btn-block" value="Registrarse">
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    ¿Ya tienes una cuenta registrada? |
+                    <strong>
+                        <a href="#modalIngreso" data-toggle="modal" data-dismiss="modal">
+                            Ingresar
+                        </a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-3.4.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin/bootstrap-datepicker.min.js"> </script>
+    <script src="js/plugin/jquery.easing.js"> </script>
+    <script src="js/plugin/jquery.scrollUp.js"> </script>
+    <script src="js/plugin/jquery.jdSlider-latest.js"></script>
+    <script src="js/plugin/jquery.pano.js"></script>
+    <script src="js/plugin/moment.js"></script>
+    <script src="js/plugin/fullcalendar.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
