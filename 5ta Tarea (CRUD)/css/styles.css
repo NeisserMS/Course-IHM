@@ -1,0 +1,9 @@
+.contenedor-imagen a {
+	background: #3da5e2;
+	display: inline-block;
+	
+}
+
+.contenedor-imagen:hover img {
+	opacity: .3;
+}

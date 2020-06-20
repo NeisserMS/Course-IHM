@@ -18,6 +18,10 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 
 ![4to trabajo](imagen4.png)
 
+### 5to Trabajo (CRUD)
+
+![5to trabajo](5ta_tarea.PNG)
+
 ### Mini Proyecto
 
 ![5to trabajo](MiniProyecto.png)

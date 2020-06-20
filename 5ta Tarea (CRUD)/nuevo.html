@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/estilos.css" rel="stylesheet">
+
+<!--<link href="css/dashboard.css" rel="stylesheet">-->
+
+<title>UPAO</title>
+</head>
+<body>
+    
+   
+  
+<div class="container">
+
+   <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="NuevoCurso.html"><span data-feather="plus"></span>&nbsp;NUEVO CURSO&nbsp;</a></li>
+          <li class="breadcrumb-item"><a href="ListaCurso.html"><span data-feather="list"></span>&nbsp;LISTA DE CURSOS&nbsp;</a></li>
+          <li class="breadcrumb-item"><a href="Buscacurso.html"><span data-feather="search"></span>&nbsp;BUSCAR CURSO&nbsp;</a></li>
+        </ol>
+   </nav>
+
+       
+    <div class="card">
+      <div class="card-header">
+        <span data-feather="search"></span>&nbsp; BUSCAR CURSO
+      </div>
+      <div class="card-body">
+      
+        <form>
+            <div class="form-group">
+                <label for="nombre"> ¿Cual es el ID del curso que deseas Buscar?</label>
+                <input class="form-control" type="text" name="search_client_init" required>
+            </div>
+            
+            <p class="text-center">
+                <button type="submit" class="btn btn-primary btn-raised btn-sm">
+                    <span data-feather="search"></span> &nbsp; Buscar
+                </button>
+            </p>
+        </form>
+    
+
+</div> <!-- /container --> 
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+ 	<script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script src="js/feather.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
+</body>
+</html>
