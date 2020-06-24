@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Prevención COVID</title>
+    <link rel="icon" href="img/logo/logo2/suma.jpg">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin/bootstrap-datepicker.standalone.min.css">
+    <link rel="stylesheet" href="css/plugin/jquery.jdSlider.css">  <!--Aqui viene el pano-->
+    <link rel="stylesheet" href="css/plugin/fullcalendar.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="habitaciones.css">
+
+    <!-- Bootstrap CSS Aquí llama a las hojas de estilo de bootstrap, pero lo hace de un servidor externo-->
+
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header class="container-fluid p-0 bg-white">
+        <div class="container p-0">
+            <div class="grid-container py-2">
+
+                <!--Logo-->
+                <div class="grid-item ">
+
+                    <a href="index.html">
+                        <img src="img/logo/logo2/nav.PNG" alt="logotipo" class="img-fluid">
+                    </a>
+
+                </div>
+
+                <div class="grid-item d-none d-lg-block"></div>
+
+                <!--Campana y reserva-->
+                <div class="grid-item d-none d-lg-block bloqueReservas">
+
+                    <!--Formulario de Reservas-->
+
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item d-none d-lg-block mt-2">
+
+                </div>
+
+                <!-- Selección de idioma -->
+                <div class="grid-item d-none d-lg-block mt-1 idiomas">
+
+                </div>
+
+                <!-- Menú Hamburguesa -->
+                <div class="grid-item mt-1 mt-sm-3 mt-md-4 mt-lg-2 botonMenu">
+                    <i class="fas fa-bars lead"> </i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Menú-->
+
+    <nav class="menu container-fluid p-0">
+
+        <ul class="nav nav-justified py-2">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#planes"> Precauciones </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#contagio"> Formas de contagio </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#comentarios"> Comentarios </a>
+            </li>
+
+
+            <li class="nav-item">
+                <ul class="my-2 py-1">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram text-white float-left mx-2"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!--Banner Interior-->
+
+    <div class="bannerInterior container-fluid bg-white p-0 d-none d-lg-block">
+        <br>
+
+        <figure>
+
+            <img src="img/Banner/fachada.jpg" class="img-fluid" width="100%">
+
+        </figure>
+
+    </div>
+
+    <!-- Info Habitación-->
+
+    <div class="infoHabitacion container-fluid bg-white p-0 pb-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!--BLOQUE IZQ-->
+
+                <div class="col-12 col-lg-8 colIzqHabitaciones p-0">
+
+                    <!--Cabecera Habitaciones-->
+                    <div class="pt-4 cabeceraHabitacion">
+
+                        <a href="index.html" class="float-left lead text-white pt-1 px-3">
+                            <h5><i class="fas fa-chevron-left"></i> Regresar</h5>
+                        </a>
+
+                        <h2 class="float-right text-white px-3 categoria">Asociados a su nivel de riesgo</h2>
+
+                            <div class="clearfix"></div>
+
+                            <ul class="nav nav-justified mt-lg-4">
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="bajo.html">Bajo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white active" href="medio.html"><i class="fas fa-chevron-right">   
+                                    </i>Medio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="alto.html">Alto</a>
+                                </li>
+                            </ul>
+                    </div>
+
+
+                    <!--Multimedia Habitaciones-->
+
+                    <!--Slider-->
+
+                    <section class="jd-slider mb-3 my-lg-3 slideHabitaciones">
+
+                        <div class="slide-inner">
+
+                            <ul class="slide-area">
+                                
+                                <li>
+                                    <img src="img/restaurante.jpg" class="img-fluid">
+                                </li>
+
+                                <li>
+                                    <img src="img/baños.jpg" class="img-fluid">
+                                </li>
+
+                                <li>
+                                    <img src="img/supermecados.jpg" class="img-fluid">
+                                </li>
+
+                                <li>
+                                    <img src="img/oficina.jpg" class="img-fluid">
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                            <a class="prev d-none d-lg-block" href="#">
+                                <i class="fas fa-angle-left fa-2x"></i>
+                            </a>
+
+                            <a class="next d-none d-lg-block" href="#">
+                                <i class="fas fa-angle-right fa-2x"></i>
+                            </a>
+
+                            <div class="controller d-block d-lg-none">
+
+                                <div class="indicate-area"></div>
+
+                            </div>
+
+                    </section>
+
+                   
+
+                    <!--Descripción Habitaciones-->
+
+                    <div class="descripcionHabitacion px-3"> 
+
+                        <h3 class="colorTitulos text-center"> 
+                            SITUACIONES DE VIDA COMÚN MÁS HABITUALES Y SU RIESGO POTENCIAL DE TRANSMISIÓN</h3>
+
+
+                        <div class="clearfix mb-4"> </div>
+
+                                <br>
+
+                                <h6> <b>IR A RESTAURANTES </b></h6>
+
+                                <p>  Posible alto riesgo aunque se puede reducir a riesgo medio al sentarse al aire libre con distancia y definfección de superficies comunes.
+                                 </p>
+
+                                <br>
+
+                                <h6> <b> IR A BAÑOS PÚBLICOS / ÁREAS COMUNES </b></h6>
+
+                                <p> 
+                                    Alto riesgo potencial de transmisión por aire y riesgo medio de transferencia por superficie.
+                                 </p>
+                                  
+                                 <br>
+                                 <h6> <b>IR A SUPERMECADOS</b></h6>
+
+                            <p> 
+                                Posible riesgo medio, aunque se puede reducir a la baja si se limita el tiempo en la tienda y siguen unas estrictas medidas de higiene</p>
+                                 
+                                 <br>
+
+                                 <h6> <b>ESPACIOS INFERIORES SIN MUCHA VENTILACIÓN (OFICINAS)</b> </h6>
+
+                                 <p> Sería de alto riesgo sobre todo si la exposición se estiende en el tiempo, por ejemplo en las oficinas cerradas.
+                                </p>
+                                
+                                <p>
+                                    Sin embargo, los CDC confirma que existe un muy bajo riesgo de transmisión desde las superficies, ya sean orgánicas o artificiales, con la excepción de la propia piel humana.</p>
+                                    <p>Guía de evidencia científica sobre la transmisión del coronavirus, por parte del centro de
+                                        control de Enfermedades de EEUU.</p>
+                                    <address>
+                                        Martes 23 de Junio de 2020<br>
+                                        Fuente:
+                                        <a href="https://www.infobae.com/america/tendencias-america/2020/06/16/estados-unidos-publica-las-claves-del-contagio-del-coronavirus/"
+                                            target="_blank">www.Infobae.com </a><br>
+            
+                                    </address>
+
+                                </div>
+                
+                            </div>
+
+                 <!--BLOQUE DER-->
+
+                <div class="col-12 col-lg-4 colDerHabitaciones">
+
+                    <h4 class="colorTitulos pt-3 text-center">LA MEJOR MANERA DE PREVENIR LA ENFERMEDAD ES EVITAR LA EXPOSICIÓN A ESTE VIRUS</h4>
+
+                  <p > Los CDC analizaron las situaciones de vida en común más habituales y su riesgo potencial de transmisión, en el que la dicotomía interior/exterior, la ventilación del espacio de transmisión, la densidad total de personas en un mismo lugar y la duración de la exposición al virus, son las principales variables por analizar. El centro de control de Enfermedades de EEUU elaboró una guía con la evidencia científica emergente sobre la transmisión del coronavirus, que confirma que los riesgos de contagio son mucho mayores en espacios <b> cerrados </b>que abiertos.</p>
+                    
+                  <br>
+                    <!--Habitaciones-->
+
+                    <div class="habitaciones">
+        
+                        <div class="container">
+                            
+                            <div class="row">
+                                
+                                <div class="col-12 pb-3 px-0 px-lg-3">
+                                   
+                                    <a href="bajo.html">
+                
+                                        <figure class="text-center">
+                
+                                            <img src="img/parque.jpg" class="img-fluid" width="100%">
+                
+                                            <p class="small py-4 mb-0">Situaciones de vida común más habituales y su riesgo potencial de transmisión</p>
+                                            
+                                            <h5 class="py-2 text-gray-dark border">Ver Detalles <i class="fas
+                                                fa-chevron-right ml-2"></i></h5>
+                
+                                             <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #847c2f">BAJO</h1>
+                
+                                        </figure>
+                
+                                    </a>
+                                
+                                </div>
+                                
+                                <div class="col-12 pb-3 px-0 px-lg-3">
+                                   
+                                    <a href="alto.html">
+                
+                                        <figure class="text-center">
+                
+                                            <img src="img/concierto.jpeg" class="img-fluid" width="100%">
+                
+                                            <p class="small py-4 mb-0">Situaciones de vida común más habituales y su riesgo potencial de transmisión</p>
+                                            
+                
+                                            <h5 class="py-2 text-gray-dark border">Ver Detalles <i class="fas
+                                                fa-chevron-right ml-2"></i></h5>
+                
+                                             <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #2F7D84">ALTO</h1>
+                
+                                        </figure>
+                
+                                    </a>
+                               
+                                </div>
+
+                            </div>
+                       
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <footer class="container-fluid p-0">
+        <div class="grid-container">
+            <div class="grid-item d-none d-lg-block pt-2"> </div>
+            <div class="grid-item d-none d-lg-block pt-2">
+                <p> © Hecho por Neisser Sánchez | Visita mi <a href="https://github.com/NeisserMS">GitHub</a>
+                </p>
+            </div>
+            <div class="grid-item pt-2">
+
+                <ul class="py-1">
+
+                    <li>
+                        <a href="https://www.facebook.com/neisserarilson.morenosanchez.9/" target="_blank"> <i
+                                class="fab fa-facebook-f lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank"> <i
+                                class="fab fa-twitter lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC0czkwt1PdL6SkjIvuuiusQ?view_as=subscriber"
+                            target="_blank"> <i class="fab fa-youtube lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/neissercode.21/?hl=es-la" target="_blank"> <i
+                                class="fab fa-instagram lead text-white float-left mx-3"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+   
+
+
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+ <script src="js/jquery-3.4.1.min.js"> </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+     integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+     crossorigin="anonymous"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/plugin/bootstrap-datepicker.min.js"> </script>
+ <script src="js/plugin/jquery.easing.js"> </script>
+ <script src="js/plugin/jquery.scrollUp.js"> </script>
+ <script src="js/plugin/jquery.jdSlider-latest.js"></script>
+ <script src="js/plugin/jquery.pano.js"></script>
+ <script src="js/plugin/moment.js"></script>
+ <script src="js/plugin/fullcalendar.min.js"></script>
+ <script src="js/medio.js"></script>
+
+</body>
+
+</html>    
