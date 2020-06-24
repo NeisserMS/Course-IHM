@@ -28,11 +28,11 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 
 ### Examen Parcial - Proyecto
 
-![8vo trabajo](semana8_1.png)
+![8vo trabajo](semana8_2.png)
 
 #### Segunda Página
 
-![8vo trabajo](semana8_2.png)
+![8vo trabajo](semana8_1.png)
 
 
 
