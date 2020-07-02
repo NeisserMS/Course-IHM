@@ -1,0 +1,159 @@
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, select, button, body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+ul, ol{ 
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .2s;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+
+
+
+
+section {
+    height: 100vh;
+}
+
+#home {
+    background: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+#home::before {
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    background: #4d0d12;
+    opacity: .2;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    padding: 40px 56px;
+    background: transparent;
+
+    user-select: none;
+
+    position: fixed;
+    left: 0;
+    top:  0;
+    width: 100%;
+    z-index: 100;
+
+    transition: background .4s, padding .4s;
+}
+
+nav span {
+    color: #FF4754;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 32px;
+}
+
+nav._fixed {
+    background: #121212;
+    padding: 24px 40px;
+}
+
+
+
+/* Footer */
+
+footer .grid-container{
+    display:grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+footer .grid-item {
+    background-color: #303439;
+    text-align: center;
+    color: white;
+
+}
+
+/* Boton*/
+
+.btn-hover{
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover.orange{
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, 
+                                                #ff9a44, #fc6076);
+}
+
+.btn-hover:hover{
+    background-position: 100% 0;
+}
+
+
+/* Scroll UP*/
+
+    #scrollUp{
+        bottom: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+        background: url(img/top.png);
+
+    }
+
