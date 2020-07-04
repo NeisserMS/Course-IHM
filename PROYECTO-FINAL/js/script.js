@@ -14,7 +14,19 @@ window.addEventListener('scroll', event => {
     }
 });
 
+/* Boton para comprar */
 
+document.querySelectorAll('.ig-follow').forEach(button => {
+    button.addEventListener('click', event => {
+        if (event.target.classList.contains('follow')){
+            event.target.innerText = 'Añadido';
+            event.target.classList.remove('follow');
+        } else {
+            event.target.innerText = 'Añadir al carrito';
+            event.target.classList.add('follow');
+        }
+    });
+});
 
 
 /* Scroll UP */
@@ -25,4 +37,7 @@ $.scrollUp({
     scrollSpeed: 2000,
     easingType: "easeOutQuint"
 })
+
+
+
 
