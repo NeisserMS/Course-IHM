@@ -1,0 +1,321 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, select, button, p, a{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  position: fixed; /*  Para que esté fijo */
+  top: 0;
+  z-index: 3; /*Para que esté por encima de todas las cajas */
+}
+
+header .grid-container {
+  display: grid;
+  grid-template-columns: 2fr 6.8fr 0.4fr 0.4fr 0.4fr 0.2fr 1fr;
+}
+
+header .grid-item {
+  text-align: center;
+}
+
+header .fa-user {
+  font-size: 26px;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+header .fa-search {
+  font-size: 20px;
+  padding-top: 2px;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+header .grid-item .shopping-container .counter-container i  {
+  font-size: 25px;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+header input {
+  margin: 9px;
+  width: 110px;
+  height: 27px;
+}
+
+header .botonMenu i {
+  font-size: 27px;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+/* Menú */
+
+nav.menu {
+  position: fixed;
+  z-index: 10;
+  top: 60px;
+  background-color: #CC555B;
+  display: none;
+}
+
+nav.menu li > .nav-link {
+  transition: 0.5s all;
+}
+
+nav.menu li > .dropdown {
+  transition: 0.5s all;
+}
+
+nav.menu .dropdown button{
+  box-shadow: none;
+}
+
+nav.menu li:hover > .nav-link {
+  
+  background: #FF8697;
+  transition: 0.5s all;
+}
+
+nav.menu li:hover > .dropdown {
+  
+  background: #FF8697;
+  transition: 0.5s all;
+  
+}
+
+.dropdown .dropdown-menu > a:hover {
+  background-color: #FF8697;
+}
+
+
+/* Imágenes*/
+
+ #imx img:hover {
+    position: relative;
+    overflow:hidden;
+    transform: scale(1.1, 1.1);
+    transition: 1s all;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color:#CC555B;
+  color:#e5c1c4;
+}
+
+
+footer ul li a {
+  color:#e5c1c4;
+  font-size: 13px; 
+}
+
+footer ul li a:hover {
+  color:white; 
+}
+
+footer .tienda .ingre{
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer .tienda .ingre:hover{
+  color: white;
+}
+
+footer .enlaces .foo1 a {
+  font-size: 13px;
+  color: #e5c1c4;
+}
+
+footer .enlaces .foo1 a:hover {
+ color: white;
+}
+
+footer .ingre{
+  font-size: 13px;
+}
+
+footer .text-center a{
+  color:#e5c1c4;
+  font-size: 13px;
+}
+
+footer .text-center a:hover{
+  color: white;
+}
+
+
+
+/* Scroll UP*/
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url(img/top.png);
+}
+
+/* icono valoración - estrella  */
+
+.container .row .col-4  .estrella > i {
+    cursor: pointer;
+    
+}
+
+.container .row .col-4  .estrella i:hover {
+    
+    color: #FFDD00;
+  }
+
+/*  Boton Gradiente */
+
+.btn-hover {
+  padding: 10px;
+  border: none;
+  width: 170px;
+  
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover.orange {
+  box-shadow: 0 4px 20px 0 rgba(252, 104, 110, 0.75);
+  background-image: linear-gradient(to right,#FF6465, #FFAF7B,
+                  #FFAF7B,#FF6465);
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+}
+
+
+/* Boton añadir al carrito */
+
+.shopping-container {
+  padding: 0;
+  margin : 0;
+  border : none;
+}
+
+.shopping-container button{
+  padding: 10px;
+  border: none;
+  width: 170px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.shopping-container button {
+box-shadow: 0 4px 20px 0 rgba(252, 104, 110, 0.75);
+background-image: linear-gradient(to 
+
+right,#FF8697,#CC555B, #CC555B,#FF8697);
+}
+
+div.shopping-container  #add-animation:hover {
+    background-position: 100% 0;
+}
+
+.shopping-container .counter-container {
+
+  position: relative;
+}
+
+.shopping-container .counter-container svg {
+
+  font-size: 25px;
+  cursor: pointer;
+  color: #7f7f7f;
+}
+
+.shopping-container .counter-container span {
+  user-select: none;
+  position: absolute;
+  background: #FF4754;
+  color: white;
+  
+  width: .8rem;
+  height: .8rem;
+  font-size: .6rem;
+  border-radius: 50%;
+
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top  : .2rem;
+  right: .3rem;
+}
+
+.shopping-container .counter-container span:not(.animation-
+
+counter) {
+  display: none;
+}
+
+.shopping-container .counter-container span.animation-
+
+counter {
+  animation: count .4s ease-in-out;
+}
+
+@keyframes count {
+  from {
+      top  : .2rem;
+      right: -1.8rem;
+      transform: rotate(120deg);
+  }
+
+  25% {
+      top  : -.2rem;
+      right: -1.2rem;
+      transform: rotate(80deg);
+  }
+
+  50% {
+      top  : -.4rem;
+      right: -.6rem;
+      transform: rotate(60deg);
+  }
+
+  75% {
+      top  : -.4rem;
+      right: 0;
+      transform: rotate(30deg);
+  }
+
+  to {
+      top  : .2rem;
+      right: .3rem;
+      transform: rotate(0);
+  }
+}
+
