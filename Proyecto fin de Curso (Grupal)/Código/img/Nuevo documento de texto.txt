@@ -1,0 +1,269 @@
+#c471ed
+#f64f59
+
+Reservadas para la pareja o persona que ocupa nuestro corazón.
+
+Hugo You're Beary Cute
+
+Sombrerera Negra con 60 Rosas Rojas y Varilla
+
+Te brindamos una asesoria personalizada para que puedas seleccionar el mejor regalo para la ocasión que se te presente. 
+
+Transmite tus sentimientos por medio de regalos!
+
+Caja Blanca con Rosa y Juguete en Lata
+
+Caja 3R Natural con 3 Rosas y Hugo Abeja
+
+
+----------------------------------------
+
+<button class="btn-hover orange"> Ver detalles </button><br><br>
+
+.btn-hover {
+  padding: 10px;
+  border: none;
+  width: 170px;
+  
+  /* border-radius: 20px;  */
+  cursor: pointer;
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover.orange {
+  box-shadow: 0 4px 20px 0 rgba(252, 104, 110, 0.75);
+  background-image: linear-gradient(to right,#c471ed,#f64f59,
+                                        #f64f59,#c471ed);
+}
+
+-------------
+
+  .shopping-container {
+    padding: 0;
+    margin : 0;
+    border : none;
+}
+
+
+.shopping-container button{
+	padding: 10px;
+	border: none;
+	width: 600px;
+	cursor: pointer;
+ 	 color: #fff;
+	background-size: 300% 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.shopping-container button {
+	box-shadow: 0 4px 20px 0 rgba(252, 104, 110, 0.75);
+	background-image: linear-gradient(to right,#c471ed,#f64f59,
+										  #f64f59,#c471ed);
+  }
+
+  div.shopping-container  #add-animation:hover {
+	background-position: 100% 0;
+  }
+
+
+
+
+
+
+
+
+.shopping-container .counter-container svg {
+    width: 1rem;
+    color: #fff;
+}
+
+.shopping-container .counter-container span {
+    user-select: none;
+    position: absolute;
+    background: #FF4754;
+    
+    width: .6rem;
+    height: .6rem;
+    font-size: .3rem;
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top  : .2rem;
+    right: .3rem;
+}
+
+.shopping-container .counter-container span:not(.animation-counter) {
+    display: none;
+}
+
+.shopping-container .counter-container span.animation-counter {
+    animation: count .4s ease-in-out;
+}
+
+@keyframes count {
+    from {
+        top  : .2rem;
+        right: -1.8rem;
+        transform: rotate(120deg);
+    }
+
+    25% {
+        top  : -.2rem;
+        right: -1.2rem;
+        transform: rotate(80deg);
+    }
+
+    50% {
+        top  : -.4rem;
+        right: -.6rem;
+        transform: rotate(60deg);
+    }
+
+    75% {
+        top  : -.4rem;
+        right: 0;
+        transform: rotate(30deg);
+    }
+
+    to {
+        top  : .2rem;
+        right: .3rem;
+        transform: rotate(0);
+    }
+}
+
+
+------------------
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.shopping-container button {
+  border-radius: 0.1rem;
+  background: #c471ed;
+  padding: 0 2rem;
+  transition: 0.2s opacity;
+}
+
+.shopping-container button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.shopping-container .counter-container {
+  margin-right: 1rem;
+
+  border: 1px solid #ffffff20;
+  border-radius: 0.1rem;
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.shopping-container .counter-container svg {
+  color: #dfdad4;
+  font-size: 25px;
+}
+
+.shopping-container .counter-container span {
+  user-select: none;
+  position: absolute;
+  background: #ff4754;
+
+  width: 0.6rem;
+  height: 0.6rem;
+  font-size: 0.7rem;
+  border-radius: 50%;
+
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0.2rem;
+  right: 0.3rem;
+}
+
+.shopping-container .counter-container span:not(.animation-counter) {
+  display: none;
+}
+
+.shopping-container .counter-container span.animation-counter {
+  animation: count 0.4s ease-in-out;
+}
+
+@keyframes count {
+  from {
+    top: 0.2rem;
+    right: -1.8rem;
+    transform: rotate(120deg);
+  }
+
+  25% {
+    top: -0.2rem;
+    right: -1.2rem;
+    transform: rotate(80deg);
+  }
+
+  50% {
+    top: -0.4rem;
+    right: -0.6rem;
+    transform: rotate(60deg);
+  }
+
+  75% {
+    top: -0.4rem;
+    right: 0;
+    transform: rotate(30deg);
+  }
+
+  to {
+    top: 0.2rem;
+    right: 0.3rem;
+    transform: rotate(0);
+  }
+}
+
+
+
+.dropdown-menu a 
+
+
+-----------
+
+
+
+Caso: Un cliente que tiene su negocio de ferreteria busca a un equipo de programadores y le pide que le hagan un sistema para ayudarle a administrar mejor el negocio.
+
+
+Los aspectos que se presenta en el caso son dos, el primero es beneficioso o bénefico, porque el desarrollador aprende varias cosas y le siguiere al cliente como debería ser el sistema que pide, tanto en su diseño como en las tecnologías para su desarrollo, le sugiere ya de los otros trabajos que ha realizado, y
+
+ el segundo es lo bueno, porque es honesto y le dice que el sistema que pide es más sencillo de lo que se imagina y que el costo no es tan elevado como piensa.
+
+
+
+
+
+
+
+
+
+
+
+
+

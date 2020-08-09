@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>La casa de los detalles</title>
+    <link rel="icon" href="img/LA CASA DE LOS DETALLES/icon.jpeg">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="reclamaciones.css">
+    <link rel="stylesheet" href="script.js">
+   
+
+    <!-- Bootstrap CSS Aquí llama a las hojas de estilo de bootstrap, pero lo hace de un servidor externo-->
+
+</head>
+
+<body class="hidden">
+    
+    <div class="centrado" id="onload">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!--Header-->
+    
+    <header class="container-fluid p-0 bg-white">
+        <div class="container p-0">
+            <div class="grid-container py-2">
+
+                <!--Logo-->
+                <div class="grid-item">
+
+                    <a href="index.html">
+                        <img src="img/LA CASA DE LOS DETALLES/logo.png" alt="logotipo" class="img-fluid">
+                    </a>
+
+                </div>
+
+                <div class="grid-item d-none d-lg-block"></div>
+
+             
+             
+                <!-- Ingreso de Usuarios-->
+
+                <div class="grid-item d-none d-lg-block mt-2">
+
+                    <a href="#modalIngreso" data-toggle="modal"> <i class="far fa-user"></i></a>
+
+                </div>
+
+
+               
+                  <!-- Delivery -->
+
+                  <div class="grid-item d-none d-lg-block mt-2 delivery">
+                    <a href="#modalDelivery" data-toggle="modal">
+                    <i class="fas fa-truck" title="Delivery"></i>
+                    </a>
+                </div>
+                
+
+                 <!-- Compras - carrito -->
+                <div class="grid-item d-none d-lg-block mt-2">
+                    <div class="shopping-container">
+                        <div class="counter-container">
+                            <span id="counter">0</span>
+                            <a href="perfil.html">
+                            <i data-feather="shopping-cart" title="Carrito de compras"></i>
+                            </a>
+                        </div> 
+                    </div>
+
+                </div>
+
+                <!-- Buscar -->
+               
+                <input type="tex">
+                <div class="grid-item d-none d-lg-block mt-2">
+                    <i class="fas fa-search"></i>
+                </div>
+
+
+                <!-- Menú Hamburguesa -->
+                <div class="grid-item mt-1 mt-sm-3 mt-md-4 mt-lg-2 botonMenu">
+                    <i class="fas fa-bars lead"> </i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Menú-->
+
+    <nav class="menu container-fluid p-0">
+
+        <ul class="nav nav-justified py-2">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Promociones </a>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn  text-white" data-toggle="dropdown">
+                      Arreglos
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Rosas</a>
+                      <a class="dropdown-item" href="#">Tulipanes</a>
+                      <a class="dropdown-item" href="#">Girasoles</a>
+                      <a class="dropdown-item" href="#">Ramos</a>
+                      <a class="dropdown-item" href="#">Variados</a>
+                      <a class="dropdown-item" href="#">Artificiales</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn text-white" data-toggle="dropdown">
+                      Peluches
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Musicales</a>
+                      <a class="dropdown-item" href="#">Variados</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Chocolates </a>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn text-white" data-toggle="dropdown">
+                      Packs
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Grande</a>
+                      <a class="dropdown-item" href="#">Mediano</a>
+                      <a class="dropdown-item" href="#">Pequeño</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn  text-white" data-toggle="dropdown">
+                      Para él
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Bebidas</a>
+                      <a class="dropdown-item" href="#">Packs</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn text-white" data-toggle="dropdown">
+                      Ocasión
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Agradecimientos</a>
+                      <a class="dropdown-item" href="#">Amor</a>
+                      <a class="dropdown-item" href="#">Amistad</a>
+                      <a class="dropdown-item" href="#">Cumpleaños</a>
+                      <a class="dropdown-item" href="#">Matrimonio</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn text-white" data-toggle="dropdown" > 
+                      Otros
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Globos</a>
+                      <a class="dropdown-item" href="#">Tarjetas</a>
+                      <a class="dropdown-item" href="#">Golosinas</a>
+                      <a class="dropdown-item" href="#">Juguetes</a>
+                      <a class="dropdown-item" href="#">Tortas</a>
+                    </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Quienes somos</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <br> <br> <br>  <br> <br> 
+
+    <!-- LIBRO DE RECLAMACIONES -->
+
+    
+
+    <div class="container">
+        <h3 class="animate__animated animate__heartBeat text-center pt-2" style="color: #E30B17;">LIBRO DE RECLAMACIONES</h3>
+        <hr>
+        <div class="row">
+           
+            <div class="col-6">
+            <form action="/action_page.php" class="was-validated">
+                <div class="form-group">
+                <label for="uname">Fecha</label>
+                <input type="date" class="form-control" id="uname" placeholder="Escriba la fecha de la compra" name="uname" required>
+                <div class="valid-feedback">Valido</div>
+                </div>
+                <div class="form-group">
+                <label for="pwd">Dirección</label>
+                <input type="text" class="form-control" id="pwd" placeholder="Escriba su dirección" name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Teléfono</label>
+                    <input type="number" class="form-control" id="pwd" placeholder="Escriba su número teléfonico" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Detalle de la Reclamación</label>
+                    <input type="text" class="form-control" id="pwd" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                </div>
+               
+                <p> <b>Es necesario llenar todos los campos. </b></p>
+                <button type="submit" class="btn btn-danger" >Enviar</button>
+            </form>   
+      </div>
+
+      <div class="col-6">
+        <form action="/action_page.php" class="was-validated">
+            <div class="form-group">
+            <label for="uname">Nombre</label>
+            <input type="text" class="form-control" id="uname" placeholder="Escriba su nombre" name="uname" required>
+            <div class="valid-feedback">Valido</div>
+            </div>
+            <div class="form-group">
+            <label for="pwd">DNI</label>
+            <input type="number" class="form-control" id="pwd" placeholder="Escriba el número de su dni" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Email</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Escriba su dirección email" name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Monto del bien contratado</label>
+                <input type="number" class="form-control" id="pwd" placeholder="Escriba el monto del producto" name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+            </div>
+        </form>  
+
+
+      </div>
+    </div>
+</div>
+  
+    <br> <br>
+
+    <!-- FOOTER -->
+    
+    <footer class="container-fluid">
+        <div class="row text-left pt-4">
+
+          <div class="col-4 tienda text-center">
+            <h6>MI PERFIL</h6>
+            <p class="ingre"><a href="perfil.html"><i class="fas fa-user-edit pt-3"></i> Ingresar </a> </p>
+             <p class="pt-1" style="font-size: 14px;"> Aviso: Debes estar registrado para poder ingresar a tu perfil.</p>
+            </div>
+            
+            <div class="col-4 enlaces">
+                <h6> POLÍTICAS</h6>
+                <p class="foo1 pt-2"> <a href="#"> Horarios de atención </a></p>
+                <p class="foo1"> <a href="#"> Términos y condiciones</a></p>
+                <p class="foo1"> <a href="devoluciones.html"> Politicas de entrega y devolución</a></p>
+            </div>
+
+            <div class="col-4">
+                <h6> INFORMACIÓN DE LA TIENDA</h6>
+                <p class="ingre"><i class="fas fa-map-marker-alt pt-2"  style="margin: 5px;" ></i> Av. Larco 125 Urb. La Mercerd</p>
+                <p class="ingre"><i class="fas fa-phone-alt"  style="margin: 5px;" ></i> (044)262420 </p>
+                <p class="ingre"> <i class="fas fa-at" style="margin: 5px;"></i> Sistemas_2020@upao.edu.pe </p>
+                
+            </div>
+        </div>
+
+            <hr>
+
+            <div class="container-fluid">
+                <div class="row pt-2">
+                    <div class="col-4">
+                        <p class="text-center"><i class="fas fa-book-open" style="margin: 10px;"></i> <a href="">Libro de reclamaciones </a></p>
+                    </div>
+
+                    <div class="col-4"></div>
+
+                    <div class="col-4">
+
+                        <ul>
+
+                            <li>
+                                <a href="https://www.facebook.com/neisserarilson.morenosanchez.9/" target="_blank"> <i class="fab fa-facebook-f lead  float-left mx-3"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="#" target="_blank"> <i class="fab fa-twitter lead  float-left mx-3"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC0czkwt1PdL6SkjIvuuiusQ?view_as=subscriber" target="_blank"> <i class="fab fa-youtube lead  float-left mx-3"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="https://www.instagram.com/neissercode.21/?hl=es-la" target="_blank"> <i class="fab fa-instagram lead  float-left mx-3"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/NeisserMS" target="_blank"> <i class="fab fa-github lead float-left mx-3"></i> </a>
+                            </li>
+                           
+                        </ul>
+        
+                    </div>
+
+
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 text-center" style="font-size: 13px;"> <p> <b> © PROYECTO FIN DE CURSO - INTERACCIÓN HOMBRE MAQUINA 2020 </b> </p> </div>
+
+                </div>
+            </div>
+
+
+    </footer>
+
+
+        <!-- Ventanas Modal Ingreso -->
+
+        <div class="modal" id="modalIngreso">
+
+            <div class="modal-dialog">
+    
+                <div class="modal-content">
+    
+                    <div class="modal-header text-white" style="background-color: #CC555B">
+                        <h4 class="modal-title">Ingresar</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+    
+                    <div class="modal-body">
+    
+                        <!-- Ingreso con Redes Sociales-->
+    
+                        <div class="d-flex">
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-primary text-center text-white" style="cursor:pointer">
+                                    <i class="fab fa-facebook"></i>
+                                    Ingreso con Facebook
+                                </p>
+                            </div>
+    
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-danger text-center text-white" style="cursor: pointer;">
+                                    <i class="fab fa-google"></i>
+                                    Ingreso con Google
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Ingreso Directo-->
+    
+                        <hr class="mt-0">
+                        <form>
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="email" class="form-control" placeholder="Email" required>
+    
+                            </div>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="fas fa-unlock-alt"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="password" class="form-control" placeholder="Contraseña" required>
+    
+                            </div>
+    
+                            <input type="submit" class="btn btn-dark btn-block" value="Ingresar">
+    
+                        </form>
+    
+                    </div>
+    
+                    <div class="modal-footer">
+                        ¿No tienes una cuenta registrada? |
+                        <strong>
+    
+                            <a href="#modalRegistro" data-toggle="modal" data-dismiss="modal">
+                                Registrarse
+                            </a>
+    
+                        </strong>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <!-- Ventanas Modal Registro -->
+    
+        <div class="modal" id="modalRegistro">
+    
+            <div class="modal-dialog">
+    
+                <div class="modal-content">
+    
+                    <div class="modal-header  text-white" style="background-color: #CC555B;">
+                        <h4 class="modal-title">Registrate</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+    
+                    <div class="modal-body">
+    
+                        <!-- Ingreso con Redes Sociales-->
+    
+                        <div class="d-flex">
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-primary text-center text-white" style="cursor: pointer;">
+                                    <i class="fab fa-facebook"></i>
+                                    Ingreso con Facebook
+                                </p>
+                            </div>
+    
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-danger text-center text-white" style="cursor:pointer">
+                                    <i class="fab fa-google"></i>
+                                    Ingreso con Google
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Registro Directo-->
+    
+                        <hr class="mt-0">
+    
+                        <form>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="far fa-user"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="text" class="form-control" placeholder="Nombre">
+    
+                            </div>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="number" class="form-control" placeholder="Telefono" required>
+    
+                            </div>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="email" class="form-control" placeholder="Email" required>
+    
+                            </div>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="fas fa-unlock-alt"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="password" class="form-control" placeholder="Contraseña" required>
+    
+                            </div>
+    
+                            <input type="submit" class="btn btn-dark btn-block" value="Registrarse">
+    
+                        </form>
+    
+                    </div>
+    
+                    <div class="modal-footer">
+                        ¿Ya tienes una cuenta registrada? |
+                        <strong>
+                            <a href="#modalIngreso" data-toggle="modal" data-dismiss="modal">
+                                Ingresar
+                            </a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+          <!-- Ventanas Modal DELIVERY -->
+    
+          <div class="modal" id="modalDelivery">
+    
+            <div class="modal-dialog">
+    
+                <div class="modal-content">
+    
+                    <div class="modal-header text-white" style="background-color: #CC555B">
+                        <h4 class="modal-title">Delivery</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+    
+                    <div class="modal-body">
+    
+                    
+                        <!-- Ingreso Directo-->
+    
+                      
+                        <form>
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="far fa-address-card"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="text" class="form-control" placeholder="Dirección" required>
+    
+                            </div>
+    
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="fas fa-gift"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="text" class="form-control" placeholder="Código del producto" required>
+    
+                            </div>
+                            <div class="input-group mb-3">
+    
+                                <div class="input-group-prepend">
+    
+                                    <span class="input-group-text">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+    
+                                </div>
+    
+                                <input type="number" class="form-control" placeholder="Número de tarjeta" required>
+    
+                            </div>
+                            
+                            <small> Aviso: </small> <br>
+                            <small style="color:#CC555B;">Debes estar registrado para este tipo de servicio</small> <br>
+                            <small style="color:#CC555B;">Este servicio solo es válido para la ciudad de Trujillo</small> <br>
+                            <small style="color:#CC555B;">Toda entrega se aplicará costo de delivery el cual dependerá de la zona.</small> <br>
+                            <p class="ml-1"> <input type="checkbox"> <small> Acepto términos y condiciones. </small> </p>
+    
+                            <input type="submit" class="btn btn-dark btn-block mt-3" value="Enviar">
+    
+    
+    
+                        </form>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="js/jquery-3.4.1.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>feather.replace()</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/plugin/jquery.easing.js"> </script>
+        <script src="js/plugin/jquery.scrollUp.js"> </script>
+        <script src="js/script.js"></script>
+    
+    </body>
+    </html>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-3.4.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace()</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/plugin/jquery.easing.js"> </script>
+    <script src="js/plugin/jquery.scrollUp.js"> </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
