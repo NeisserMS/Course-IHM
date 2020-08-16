@@ -35,7 +35,9 @@ En este repositorio subiré mis trabajos del Curso de Interacción Hombre Maquin
 ![8vo trabajo](semana8_1.png)
 
 
+#### PROYECTO FINAL - TIENDA DE REGALOS
 
+![8vo trabajo](ProyectoFinal.png)
 
 > Es hora de que pagues por mi esfuerzo jaja, visita mi blog (Ko-fi) y podrás encontrar documentos de los proyectos que he hecho hasta ahora, como por ejem: Inso l, Inso ll, Base de Datos, Arqui de Comp, Redes, etc.
 
